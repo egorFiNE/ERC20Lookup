@@ -3,7 +3,7 @@
 Lookup multiple ERC20 token's metadata.
 
 ```javascript
-import { lookup } from 'ERC20Lookup';
+import { lookup } from 'erc20lookup';
 import { ethers } from 'ethers';
 
 const provider = new ethers.providers.JsonRpcProvider('https://cloudflare-eth.com/v1/mainnet');
@@ -21,4 +21,4 @@ See `test/ERC20LookupTest.js`
 
 # Deployments
 
-Deployment addresses are listed inside `ERC20Lookup.mjs`.
+Deployment addresses are listed inside `erc20lookup.mjs`.
