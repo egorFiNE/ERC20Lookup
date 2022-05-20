@@ -1,21 +1,20 @@
 {
   "name": "erc20lookup",
   "version": "1.0.0",
-  "description": "Lookup multiple ERC20 tokens",
-  "main": "lib/ERC20Lookup.mjs",
+  "description": "Lookup multiple ERC20 tokens's metadata",
+  "main": "lib/erc020lookup.mjs",
   "directories": {
     "lib": "lib"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/egorFiNE/ERC20Lookup.git"
+    "url": "git+https://github.com/egorFiNE/erc20lookup.git"
   },
-  "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/egorFiNE/ERC20Lookup/issues"
+    "url": "https://github.com/egorFiNE/erc20lookup/issues"
   },
-  "homepage": "https://github.com/egorFiNE/ERC20Lookup#readme",
+  "homepage": "https://github.com/egorFiNE/erc20lookup#readme",
   "devDependencies": {
     "mocha": "^10.0.0"
   },
