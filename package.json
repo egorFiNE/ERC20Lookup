@@ -1,11 +1,8 @@
 {
   "name": "erc20lookup",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Lookup multiple ERC20 tokens' metadata",
-  "main": "lib/erc020lookup.mjs",
-  "directories": {
-    "lib": "lib"
-  },
+  "main": "index.mjs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/egorFiNE/erc20lookup.git"

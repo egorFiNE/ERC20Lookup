@@ -2,7 +2,7 @@
 
 import assert from 'assert';
 import { ethers } from 'ethers';
-import { lookup } from '../lib/ERC20Lookup.mjs';
+import { lookup } from '../index.mjs';
 
 const ERC20_ABI = [
   {
