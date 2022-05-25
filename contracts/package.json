@@ -1,12 +1,7 @@
 {
+  "private": true,
   "name": "erc20lookup",
   "version": "1.0.1",
-  "repository": {
-    "url": "https://github.com/egorFiNE/erc20lookup.git"
-  },
-  "bugs": {
-    "url": "https://github.com/egorFiNE/erc20lookup/issues"
-  },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.5",
     "@nomiclabs/hardhat-waffle": "^2.0.3",
