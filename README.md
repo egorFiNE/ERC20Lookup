@@ -1,6 +1,6 @@
 # ERC20Lookup
 
-Lookup multiple ERC20 token's metadata.
+Lookup multiple ERC20 token's metadata and store it in `contract.erc20` hash.
 
 ```javascript
 import { lookup } from 'erc20lookup';
@@ -17,8 +17,8 @@ console.log(usdt.erc20.decimals);
 
 # Usage
 
-See `test/ERC20LookupTest.js`
+See `test/erc20lookupTest.js`
 
 # Deployments
 
-Deployment addresses are listed inside `erc20lookup.mjs`.
+Deployment addresses are hardcoded inside `lib/erc20lookup.mjs`.
