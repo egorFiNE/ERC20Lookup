@@ -1,8 +1,4 @@
-const chai = require('chai');
-const { solidity } = require('ethereum-waffle');
-
-chai.use(solidity);
-const expect = chai.expect;
+const { expect } = require('chai');
 
 describe("erc20lookup", function () {
   it("should lookup", async () => {
