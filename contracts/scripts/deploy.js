@@ -7,6 +7,7 @@ async function main() {
 
   const Factory = await ethers.getContractFactory('ERC20Lookup', deployer);
   const contract = await Factory.deploy();
+  await contract.deployed();
 
   console.log("Deployed at:", contract.address);
 }
