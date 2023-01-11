@@ -1,6 +1,6 @@
 {
   "name": "erc20lookup",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Lookup multiple ERC20 tokens' metadata",
   "main": "index.mjs",
   "repository": {
