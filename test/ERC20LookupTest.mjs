@@ -345,7 +345,7 @@ const ERC20_ABI = [
 
 describe('ERC20Lookup', function () {
   it('should lookup', async () => {
-    const provider = new ethers.providers.JsonRpcProvider('https://cloudflare-eth.com/v1/mainnet');
+    const provider = new ethers.JsonRpcProvider('https://cloudflare-eth.com/v1/mainnet');
     const usdt = new ethers.Contract('0xdAC17F958D2ee523a2206206994597C13D831ec7', ERC20_ABI, provider);
     await lookup(provider, [ usdt ]);
     assert.strictEqual(usdt.erc20.symbol, 'USDT');

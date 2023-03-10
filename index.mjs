@@ -70,8 +70,9 @@ export async function lookup(provider, contracts) {
     throw new Error(`No lookup contract for chainId ${chainIdHumanReadable}`);
   }
 
+  const addresses = await Promise.all(contracts.map(contract => contract.getAddress()));
+
   const lookupContract = new ethers.Contract(contractAddress, LOOKUP_ABI, provider);
-  const addresses = contracts.map(contract => contract.address);
 
   let results = null;
   try {
