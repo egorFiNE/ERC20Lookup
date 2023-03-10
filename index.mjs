@@ -57,15 +57,17 @@ const LOOKUP_ABI = [
 export async function lookup(provider, contracts) {
   let chainId;
   if (provider.chainId) {
-    chainId = provider.chainId;
+    chainId = Number(provider.chainId);
   } else {
     const network = await provider.getNetwork();
-    chainId = network.chainId;
+    chainId = Number(network.chainId);
   }
+
+  const chainIdHumanReadable = '0x' + chainId.toString(16);
 
   const contractAddress = process.env.ERC20_LOOKUP_CONTRACT_ADDRESS || LOOKUP_CONTRACT_ADDRESSES_BY_CHAINID[chainId];
   if (!contractAddress) {
-    throw new Error(`No lookup contract for chainId 0x${chainId.toString(16)}`);
+    throw new Error(`No lookup contract for chainId ${chainIdHumanReadable}`);
   }
 
   const lookupContract = new ethers.Contract(contractAddress, LOOKUP_ABI, provider);
@@ -75,7 +77,7 @@ export async function lookup(provider, contracts) {
   try {
     results = await lookupContract.lookup(addresses);
   } catch (e) {
-    throw new Error(`ERC20Lookup can't lookup contracts ${addresses.join(',')} via ${contractAddress} at 0x${chainId.toString(16)}`);
+    throw new Error(`ERC20Lookup can't lookup contracts ${addresses.join(',')} via ${contractAddress} at ${chainIdHumanReadable}`);
   }
 
   for (let i=0; i<contracts.length; i++) {
