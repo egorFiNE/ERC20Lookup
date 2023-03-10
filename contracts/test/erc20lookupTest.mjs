@@ -1,4 +1,4 @@
-const { expect } = require('chai');
+import { expect } from 'chai';
 
 describe("erc20lookup", function () {
   it("should lookup", async () => {
