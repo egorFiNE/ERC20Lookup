@@ -1,13 +1,12 @@
 async function main() {
   const deployer = new ethers.Wallet(process.env.PRIVATE_KEY, ethers.provider);
+  console.log(deployer);
 
   console.log("Deploying ERC20Lookup with the account:", deployer.address);
 
-  console.log("Account balance:", (await deployer.getBalance()).toString());
-
   const Factory = await ethers.getContractFactory('ERC20Lookup', deployer);
   const contract = await Factory.deploy();
-  await contract.deployed();
+  await contract.waitForDeployment();
 
   console.log("Deployed at:", contract.address);
 }

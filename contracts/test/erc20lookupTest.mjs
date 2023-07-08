@@ -4,18 +4,19 @@ describe("erc20lookup", function () {
   it("should lookup", async () => {
     const ERC20Lookup = await ethers.getContractFactory('ERC20Lookup');
     const erc20Lookup = await ERC20Lookup.deploy();
+    await erc20Lookup.waitForDeployment();
 
     const TestToken = await ethers.getContractFactory('TestToken');
 
     const testToken1 = await TestToken.deploy('TEST1', 'test one', 6);
-    await testToken1.deployed();
+    await testToken1.waitForDeployment();
 
     const testToken2 = await TestToken.deploy('TEST2', 'test two', 7);
-    await testToken2.deployed();
+    await testToken2.waitForDeployment();
 
     const result = await erc20Lookup.lookup([
-      testToken1.address,
-      testToken2.address
+      await testToken1.getAddress(),
+      await testToken2.getAddress()
     ]);
 
     expect(result.length).to.be.eq(2);
