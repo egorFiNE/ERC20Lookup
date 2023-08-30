@@ -8,7 +8,7 @@ async function main() {
   const contract = await Factory.deploy();
   await contract.waitForDeployment();
 
-  console.log("Deployed at:", contract.address);
+  console.log("Deployed at:", await contract.getAddress());
 }
 
 main()
