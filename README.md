@@ -30,6 +30,7 @@ The following networks are currently supported:
 | 0x01 | Ethereum | [`0x6e7285c3E47c242e3aD62eDD5D0F19886F1e7ef0`](https://etherscan.io/address/0x6e7285c3E47c242e3aD62eDD5D0F19886F1e7ef0) |
 | 0x89 | Polygon | [`0xFe35BC1Ff694883dE8D31f3a87C5a668BCE765B0`](https://polygonscan.com/address/0xFe35BC1Ff694883dE8D31f3a87C5a668BCE765B0) |
 | 0xa4b1 | Arbitrum | [`0x2a20c66948373c7F619b32737c0bFa1dDa94E6E4`](https://arbiscan.io/address/0x2a20c66948373c7F619b32737c0bFa1dDa94E6E4) |
+| 0x2105 | Base | [`0x2C923114fC052D93BDda932DAe1a49668C17b0F0`](https://basescan.org/address/0x2C923114fC052D93BDda932DAe1a49668C17b0F0) |
 | 0x38 | BNB | [`0x9a8D6BB3c45E100c8456a8295C8b90b993bE20D4`](https://bscscan.com/address/0x9a8D6BB3c45E100c8456a8295C8b90b993bE20D4) |
 | 43114 | Avalanche | [`0xCbCB78054731a6FCCa53920959033810Ff0A7D1d`](https://snowtrace.io/address/0xCbCB78054731a6FCCa53920959033810Ff0A7D1d) |
 | 0xfa | Fantom | [`0xD07b8Ddbb60aA59648F8697A2faCbDa4C8ed4994`](https://ftmscan.com/address/0xD07b8Ddbb60aA59648F8697A2faCbDa4C8ed4994) |
