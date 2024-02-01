@@ -54,7 +54,7 @@ const LOOKUP_ABI = [
   }
 ];
 
-export async function lookup(provider, contracts) {
+export async function lookup(provider, contracts, lookupContractAddress = null) {
   let chainId;
   if (provider.chainId) {
     chainId = Number(provider.chainId);
@@ -65,7 +65,7 @@ export async function lookup(provider, contracts) {
 
   const chainIdHumanReadable = '0x' + chainId.toString(16);
 
-  const contractAddress = process.env.ERC20_LOOKUP_CONTRACT_ADDRESS || LOOKUP_CONTRACT_ADDRESSES_BY_CHAINID[chainId];
+  const contractAddress = process.env.ERC20_LOOKUP_CONTRACT_ADDRESS || lookupContractAddress || LOOKUP_CONTRACT_ADDRESSES_BY_CHAINID[chainId];
   if (!contractAddress) {
     throw new Error(`No lookup contract for chainId ${chainIdHumanReadable}`);
   }

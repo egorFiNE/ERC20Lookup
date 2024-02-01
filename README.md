@@ -39,7 +39,13 @@ The following networks are currently supported:
 | 0x05 | Goerli Testnet | [`0x1a7f041dDC8919D26dB38E186E00e6E36dCCA0E6`](https://goerli.etherscan.io/address/0x1a7f041dDC8919D26dB38E186E00e6E36dCCA0E6) |
 | 0x61 | BNB Testnet | [`0x73E068e9c7ffc91F463ca5464E77E6826D84E3A5`](https://testnet.bscscan.com/address/0x73E068e9c7ffc91F463ca5464E77E6826D84E3A5) |
 
-If you want to use your own deployment - specify the contract address in the `ERC20_LOOKUP_CONTRACT_ADDRESS` env variable. Or maybe open a pull request here for inclusion. :-)
+# Overriding contract address
+
+Need to use your own deployment? Specify the contract address in the `ERC20_LOOKUP_CONTRACT_ADDRESS` env variable or supply it as a third argument to `lookup`:
+
+```javascript
+await lookup(provider, [ usdt ], '0x....');
+```
 
 # Ethers support
 
