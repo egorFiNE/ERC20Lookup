@@ -1,8 +1,6 @@
 import { ethers } from 'ethers';
 
 const LOOKUP_CONTRACT_ADDRESSES_BY_CHAINID = {
-  0x7a69: '0x6e7285c3E47c242e3aD62eDD5D0F19886F1e7ef0', // developer code, anything
-
   0x01: '0x6e7285c3E47c242e3aD62eDD5D0F19886F1e7ef0',
   0x89: '0xFe35BC1Ff694883dE8D31f3a87C5a668BCE765B0', // polygon
   0x4e454152: '0x48cF154a086bAB5492A8D150f4d87a74eCf90743', // aurora
