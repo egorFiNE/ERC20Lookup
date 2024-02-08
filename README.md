@@ -36,8 +36,10 @@ The following networks are currently supported:
 | 0xfa | Fantom | [`0xD07b8Ddbb60aA59648F8697A2faCbDa4C8ed4994`](https://ftmscan.com/address/0xD07b8Ddbb60aA59648F8697A2faCbDa4C8ed4994) |
 | 0x0a | Optimistic | [`0xEF0Bb05F544b8540E538B958257C466dcB7347D0`](https://optimistic.etherscan.io/address/0xEF0Bb05F544b8540E538B958257C466dcB7347D0) |
 | 0x4e454152 | Aurora | `0x48cF154a086bAB5492A8D150f4d87a74eCf90743` |
-| 0x05 | Goerli Testnet | [`0x1a7f041dDC8919D26dB38E186E00e6E36dCCA0E6`](https://goerli.etherscan.io/address/0x1a7f041dDC8919D26dB38E186E00e6E36dCCA0E6) |
+| 0xa0c71fd | Blast Testnet (Sepolia) | [`0x529dbe909c6461b6fa5cA85A52DCd09087182675`](https://testnet.blastscan.io/address/0x529dbe909c6461b6fa5cA85A52DCd09087182675/contract/168587773/code) |
 | 0x61 | BNB Testnet | [`0x73E068e9c7ffc91F463ca5464E77E6826D84E3A5`](https://testnet.bscscan.com/address/0x73E068e9c7ffc91F463ca5464E77E6826D84E3A5) |
+| 0xaa36a7 | Ethereum Sepolia | [`0x746418DB600352A808709f2048E797ab0918C581`](https://sepolia.etherscan.io/address/0x746418DB600352A808709f2048E797ab0918C581) |
+| 0x05 | Goerli Testnet | [`0x1a7f041dDC8919D26dB38E186E00e6E36dCCA0E6`](https://goerli.etherscan.io/address/0x1a7f041dDC8919D26dB38E186E00e6E36dCCA0E6) |
 
 # Overriding contract address
 
